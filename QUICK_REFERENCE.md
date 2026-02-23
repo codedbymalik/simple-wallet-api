@@ -1,4 +1,4 @@
-# 📚 Quick Reference Guide - Bank Transaction API
+# Quick Reference Guide - Bank Transaction API
 
 ## File Organization Quick Map
 
@@ -51,7 +51,7 @@ DOCUMENTATION:
 
 ---
 
-## 🔍 Class Reference
+## Class Reference
 
 ### Core Classes
 
@@ -97,7 +97,7 @@ $payload = $this->getJsonPayload(); // Parse JSON body
 
 ---
 
-## 🌐 API Endpoints Cheat Sheet
+## API Endpoints Cheat Sheet
 
 ### Users
 ```
@@ -126,7 +126,7 @@ GET    /api/transactions/{id}               Get transaction
 
 ---
 
-## 📝 Request/Response Examples
+## Request/Response Examples
 
 ### Create User
 ```bash
@@ -185,7 +185,7 @@ curl -X POST http://localhost/api/transactions/transfer \
 
 ---
 
-## 🐳 Docker Commands Cheat Sheet
+## Docker Commands Cheat Sheet
 
 ```bash
 # Build & Start
@@ -217,7 +217,7 @@ docker-compose down -v
 
 ---
 
-## 🔧 Environment Variables
+## Environment Variables
 
 ```env
 # .env file (loaded in public/index.php)
@@ -230,7 +230,7 @@ APP_ENV=development     # development or production
 
 ---
 
-## 📊 Database Tables Quick Reference
+## Database Tables Quick Reference
 
 ### Users Table
 ```sql
@@ -260,29 +260,29 @@ SELECT * FROM transactions;
 
 ---
 
-## 🔐 Validation Rules
+## Validation Rules
 
 ### User Creation
-- ✅ name: Required, non-empty
-- ✅ email: Required, valid format, unique
-- ✅ phone: Optional
+- name: Required, non-empty
+- email: Required, valid format, unique
+- phone: Optional
 
 ### Account Creation
-- ✅ user_id: Required, must exist
-- ✅ account_number: Required, unique
-- ✅ balance: Required, >= 0
-- ✅ currency: Optional (defaults to 'USD')
+- user_id: Required, must exist
+- account_number: Required, unique
+- balance: Required, >= 0
+- currency: Optional (defaults to 'USD')
 
 ### Fund Transfer
-- ✅ from_account_id: Required, must exist, active
-- ✅ to_account_id: Required, must exist, active
-- ✅ amount: Required, > 0
-- ✅ Balance check: from_balance >= amount
-- ✅ Transaction: ACID compliant with rollback
+- from_account_id: Required, must exist, active
+- to_account_id: Required, must exist, active
+- amount: Required, > 0
+- Balance check: from_balance >= amount
+- Transaction: ACID compliant with rollback
 
 ---
 
-## 🐛 Error Codes & Messages
+## Error Codes & Messages
 
 | Code | Status | Meaning |
 |------|--------|---------|
@@ -295,7 +295,7 @@ SELECT * FROM transactions;
 
 ---
 
-## 🔄 Development Workflow
+## Development Workflow
 
 ```bash
 # 1. Start Docker
@@ -322,7 +322,7 @@ docker-compose down
 
 ---
 
-## 🧪 Testing Workflow
+## Testing Workflow
 
 ### 1. Create Test User
 ```bash
@@ -380,22 +380,22 @@ curl http://localhost/api/accounts/1/transactions
 
 ---
 
-## 📋 Code Review Checklist
+## Code Review Checklist
 
-- ✅ Prepared statements used (no SQL injection)
-- ✅ Type hints on all functions
-- ✅ Try/catch error handling
-- ✅ Validation before database queries
-- ✅ Error logging via error_log()
-- ✅ Clean JSON responses
-- ✅ Services implement interfaces
-- ✅ No HTML/CSS/JS in PHP files
-- ✅ Comments for complex logic
-- ✅ Returns/echoes only JSON (no var_dump)
+- Prepared statements used (no SQL injection)
+- Type hints on all functions
+- Try/catch error handling
+- Validation before database queries
+- Error logging via error_log()
+- Clean JSON responses
+- Services implement interfaces
+- No HTML/CSS/JS in PHP files
+- Comments for complex logic
+- Returns/echoes only JSON (no var_dump)
 
 ---
 
-## 🚀 Deployment Quick Steps
+## Deployment Quick Steps
 
 1. Update `.env` with production credentials
 2. Run `docker-compose up --build -d`
@@ -407,7 +407,7 @@ curl http://localhost/api/accounts/1/transactions
 
 ---
 
-## 💾 Database Backup/Restore
+## Database Backup/Restore
 
 ```bash
 # Backup
@@ -423,7 +423,7 @@ docker run --rm -v bank_api_db_data:/data -v $(pwd):/backup \
 
 ---
 
-## 🔑 Key Concepts Summary
+## Key Concepts Summary
 
 | Concept | Implementation | Purpose |
 |---------|----------------|---------|
@@ -437,7 +437,7 @@ docker run --rm -v bank_api_db_data:/data -v $(pwd):/backup \
 
 ---
 
-## 📞 Troubleshooting Guide
+## Troubleshooting Guide
 
 | Problem | Solution |
 |---------|----------|
@@ -450,7 +450,7 @@ docker run --rm -v bank_api_db_data:/data -v $(pwd):/backup \
 
 ---
 
-## 📖 Documentation Map
+## Documentation Map
 
 - **README.md** → Full API documentation
 - **QUICKSTART.md** → Get started in 5 minutes
@@ -461,4 +461,4 @@ docker run --rm -v bank_api_db_data:/data -v $(pwd):/backup \
 
 ---
 
-**Everything you need to get started is above. Happy coding! 🎉**
+**Everything you need to get started is above. Happy coding! **
