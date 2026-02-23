@@ -424,22 +424,22 @@ $payload = $this->getJsonPayload();
 
 ## Features Implemented
 
-✅ Custom Router (no framework dependencies)
-✅ Dependency Injection for Services
-✅ Singleton Database pattern
-✅ PSR-4 Autoloading via Composer
-✅ Abstract BaseModel with CRUD operations
-✅ Abstract BaseController with JSON handling
-✅ Service layer with validation
-✅ ACID transactions for fund transfers
-✅ Prepared statements for SQL injection prevention
-✅ Comprehensive error handling
-✅ Docker setup with MySQL and phpMyAdmin
-✅ Multiple accounts per user
-✅ Balance validation (no negative balances)
-✅ Account status management
-✅ Transaction history tracking
-✅ Environment configuration (.env)
+Custom Router (no framework dependencies)
+Dependency Injection for Services
+Singleton Database pattern
+PSR-4 Autoloading via Composer
+Abstract BaseModel with CRUD operations
+Abstract BaseController with JSON handling
+Service layer with validation
+ACID transactions for fund transfers
+Prepared statements for SQL injection prevention
+Comprehensive error handling
+Docker setup with MySQL and phpMyAdmin
+Multiple accounts per user
+Balance validation (no negative balances)
+Account status management
+Transaction history tracking
+Environment configuration (.env)
 
 ## License
 

@@ -1,6 +1,6 @@
-# 🏗️ Bank Transaction API - Architecture Overview
+# Bank Transaction API - Architecture Overview
 
-## 📊 Project Statistics
+## Project Statistics
 
 ```
 PHP Code Lines:        1,124 lines
@@ -17,7 +17,7 @@ Core Classes:          4 classes
 
 ---
 
-## 🎯 Request Flow Architecture
+## Request Flow Architecture
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
@@ -113,7 +113,7 @@ Core Classes:          4 classes
 
 ---
 
-## 🔄 Data Flow - Fund Transfer Example
+## Data Flow - Fund Transfer Example
 
 ```
 CLIENT                       SERVER                          DATABASE
@@ -151,7 +151,7 @@ CLIENT                       SERVER                          DATABASE
 
 ---
 
-## 🏛️ Dependency Injection Pattern
+## Dependency Injection Pattern
 
 ```
 ┌──────────────────────────────────────────────────────────┐
@@ -192,7 +192,7 @@ CLIENT                       SERVER                          DATABASE
 
 ---
 
-## 🔐 ACID Transaction Implementation
+## ACID Transaction Implementation
 
 ```
 TRANSFER OPERATION: Move $1000 from Account A → Account B
@@ -249,7 +249,7 @@ try {
 
 ---
 
-## 🛡️ Security Layers
+## Security Layers
 
 ```
 ┌─────────────────────────────────────────────┐
@@ -296,7 +296,7 @@ try {
 
 ---
 
-## 📋 Class Relationships (UML)
+## Class Relationships (UML)
 
 ```
 ┌─────────────────────┐
@@ -370,7 +370,7 @@ try {
 
 ---
 
-## 🗄️ Database Schema (Normalized 3NF)
+## Database Schema (Normalized 3NF)
 
 ```
 ┌──────────────────────┐
@@ -426,7 +426,7 @@ try {
 
 ---
 
-## 🔄 Request-Response Cycle Example
+## Request-Response Cycle Example
 
 ### Request: POST /api/transactions/transfer
 ```json
@@ -472,7 +472,7 @@ try {
 
 ---
 
-## 🚀 Deployment Architecture
+## Deployment Architecture
 
 ```
 ┌─────────────────────────────────────────────┐
@@ -522,7 +522,7 @@ try {
 
 ---
 
-## 📈 Component Metrics
+## Component Metrics
 
 | Component | Files | Lines | Responsibility |
 |-----------|-------|-------|-----------------|
@@ -536,7 +536,7 @@ try {
 
 ---
 
-## 💡 Key Design Decisions
+## Key Design Decisions
 
 | Decision | Reason | Benefits |
 |----------|--------|----------|
@@ -551,18 +551,18 @@ try {
 
 ---
 
-## ✅ Production Readiness
+## Production Readiness
 
-- ✅ All SOLID principles applied
-- ✅ Error handling complete
-- ✅ Security hardened
-- ✅ Performance optimized
-- ✅ Documented thoroughly
-- ✅ Docker containerized
-- ✅ Database normalized
-- ✅ Logging implemented
-- ✅ Type hints throughout
-- ✅ Comments clear and concise
+- All SOLID principles applied
+- Error handling complete
+- Security hardened
+- Performance optimized
+- Documented thoroughly
+- Docker containerized
+- Database normalized
+- Logging implemented
+- Type hints throughout
+- Comments clear and concise
 
 ---
 

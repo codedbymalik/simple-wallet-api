@@ -1,6 +1,6 @@
 # Quick Start Guide - Bank Transaction API
 
-## 🚀 Start with Docker (Recommended)
+## Start with Docker (Recommended)
 
 ### Prerequisites
 - Docker and Docker Compose installed
@@ -39,7 +39,7 @@ curl -X POST http://localhost/api/users \
 
 ---
 
-## 📦 Manual Setup (Without Docker)
+## Manual Setup (Without Docker)
 
 ### Prerequisites
 - PHP 8.0+
@@ -84,7 +84,7 @@ Access API at: http://localhost:8000/api/users
 
 ---
 
-## 🧪 Quick API Test Examples
+## Quick API Test Examples
 
 ### Create a User
 ```bash
@@ -145,7 +145,7 @@ curl http://localhost/api/users/1/accounts
 
 ---
 
-## 🧬 Project Structure
+## Project Structure
 
 ```
 simple wallet/
@@ -171,19 +171,19 @@ simple wallet/
 
 ---
 
-## 🔑 Key Features
+## Key Features
 
-✅ **No Framework** - Pure PHP with custom router and DI
-✅ **ACID Transactions** - Safe fund transfers with rollback
-✅ **Prepared Statements** - SQL injection protection
-✅ **Docker Ready** - Complete containerization
-✅ **PSR-4 Autoloading** - Clean namespace organization
-✅ **Error Handling** - Comprehensive validation and logging
-✅ **RESTful API** - Standardized JSON responses
+**No Framework** - Pure PHP with custom router and DI
+**ACID Transactions** - Safe fund transfers with rollback
+**Prepared Statements** - SQL injection protection
+**Docker Ready** - Complete containerization
+**PSR-4 Autoloading** - Clean namespace organization
+**Error Handling** - Comprehensive validation and logging
+**RESTful API** - Standardized JSON responses
 
 ---
 
-## 🛑 Troubleshooting
+## Troubleshooting
 
 ### Database Connection Error
 ```
@@ -214,7 +214,7 @@ chmod +x docker-compose.yaml
 
 ---
 
-## 📊 Database Diagram
+## Database Diagram
 
 ```
 Users (1) ──→ (*) Accounts
@@ -247,13 +247,13 @@ Transactions:
 
 ---
 
-## 📚 Full Documentation
+## Full Documentation
 
 See `README.md` for complete API documentation, all endpoints, error codes, and examples.
 
 ---
 
-## 🔧 Common Tasks
+## Common Tasks
 
 ### Rebuild Docker Image
 ```bash
@@ -279,4 +279,4 @@ docker-compose exec php bash
 
 ---
 
-**Ready to start?** Run `docker-compose up --build -d` and access the API! 🎉
+**Ready to start?** Run `docker-compose up --build -d` and access the API!
