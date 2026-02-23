@@ -10,9 +10,9 @@ class UserController extends BaseController
 {
     private UserService $userService;
 
-    public function __construct()
+    public function __construct(?UserService $userService = null)
     {
-        $this->userService = new UserService();
+        $this->userService = $userService ?? new UserService();
     }
 
     public function create(): void

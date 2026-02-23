@@ -10,9 +10,9 @@ class UserService implements UserServiceInterface
 {
     private UserModel $userModel;
 
-    public function __construct()
+    public function __construct(?UserModel $userModel = null)
     {
-        $this->userModel = new UserModel();
+        $this->userModel = $userModel ?? new UserModel();
     }
 
     public function createUser(array $data): array

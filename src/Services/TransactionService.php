@@ -15,11 +15,14 @@ class TransactionService implements TransactionServiceInterface
     private AccountModel $accountModel;
     private PDO $pdo;
 
-    public function __construct()
-    {
-        $this->transactionModel = new TransactionModel();
-        $this->accountModel = new AccountModel();
-        $this->pdo = Database::getInstance()->getConnection();
+    public function __construct(
+        ?TransactionModel $transactionModel = null,
+        ?AccountModel $accountModel = null,
+        ?PDO $pdo = null
+    ) {
+        $this->transactionModel = $transactionModel ?? new TransactionModel();
+        $this->accountModel = $accountModel ?? new AccountModel();
+        $this->pdo = $pdo ?? Database::getInstance()->getConnection();
     }
 
     public function transferFunds(int $fromAccountId, int $toAccountId, float $amount, string $description): array

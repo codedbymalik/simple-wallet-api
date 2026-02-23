@@ -12,10 +12,10 @@ class AccountService implements AccountServiceInterface
     private AccountModel $accountModel;
     private UserModel $userModel;
 
-    public function __construct()
+    public function __construct(?AccountModel $accountModel = null, ?UserModel $userModel = null)
     {
-        $this->accountModel = new AccountModel();
-        $this->userModel = new UserModel();
+        $this->accountModel = $accountModel ?? new AccountModel();
+        $this->userModel = $userModel ?? new UserModel();
     }
 
     public function createAccount(int $userId, array $data): array

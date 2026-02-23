@@ -10,9 +10,9 @@ class TransactionController extends BaseController
 {
     private TransactionService $transactionService;
 
-    public function __construct()
+    public function __construct(?TransactionService $transactionService = null)
     {
-        $this->transactionService = new TransactionService();
+        $this->transactionService = $transactionService ?? new TransactionService();
     }
 
     public function transfer(): void

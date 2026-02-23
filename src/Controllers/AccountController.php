@@ -10,9 +10,9 @@ class AccountController extends BaseController
 {
     private AccountService $accountService;
 
-    public function __construct()
+    public function __construct(?AccountService $accountService = null)
     {
-        $this->accountService = new AccountService();
+        $this->accountService = $accountService ?? new AccountService();
     }
 
     public function create(): void
